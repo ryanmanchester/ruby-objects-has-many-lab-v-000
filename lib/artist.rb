@@ -1,3 +1,4 @@
+require 'pry'
 class Artist
   attr_accessor :name
 
@@ -19,6 +20,7 @@ class Artist
     song = Song.new(name)
     @songs << song
     song.artist = self
+    
   end
 
 
